@@ -18,7 +18,7 @@ class MyStreamingAppTests extends FunSuite with DataFrameSuiteBase {
     val expected = sc.parallelize(List(Some(3.67))).toDF("avg_star_rating")
     val actual = MyStreamingApp.compute(input)
     actual.printSchema()
-    actual.show()
+    actual.show();
     assertDataFrameEquals(actual, expected) // equal
   }
 }
