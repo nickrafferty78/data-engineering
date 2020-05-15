@@ -160,7 +160,7 @@
     <orderEntry type="library" name="Maven: org.apache.derby:derby:10.12.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.spark:spark-streaming_2.12:2.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming_2.12:2.4.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.bahir:spark-streaming-twitter_2.12:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.twitter4j:twitter4j-stream:4.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.twitter4j:twitter4j-core:4.0.6" level="project" />
