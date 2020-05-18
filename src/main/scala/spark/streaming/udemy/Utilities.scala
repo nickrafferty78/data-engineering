@@ -14,15 +14,14 @@ object Utilities {
   
   /** Configures Twitter service credentials using twiter.txt in the main workspace directory */
   def setupTwitter() = {
-    import scala.io.Source
-    
-    for (line <- Source.fromFile("/Users/nickrafferty/DataEngineering/spark-hello-world/src/main/scala/spark/streaming/udemy/twitter.txt").getLines) {
-      val fields = line.split(" ")
-      if (fields.length == 2) {
-        System.setProperty("twitter4j.oauth." + fields(0), fields(1))
-      }
+
+    val env = System.getenv
+    import scala.collection.JavaConversions._
+    for (envName <- env.keySet) {
+      System.setProperty("twitter4j.oauth." + envName,env.get(envName))
     }
   }
+
   
   /** Retrieves a regex Pattern for parsing Apache access logs. */
   def apacheLogPattern():Pattern = {

@@ -16,7 +16,6 @@ object PrintTweets {
   /** Our main function where the action happens */
   def main(args: Array[String]) {
 
-    // Configure Twitter credentials using twitter.txt
     setupTwitter()
     
     // Set up a Spark streaming context named "PrintTweets" that runs locally using
